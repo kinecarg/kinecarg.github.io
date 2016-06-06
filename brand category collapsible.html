@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+<script>
+var myCenter=new google.maps.LatLng(38.673302,-90.202633);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:18,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</head>
+<body>
+
+<div class="container">
+
+<div style="background:#000033;">
+  <table style="width:100%">
+  <tr>
+    <td><img src="../assets/accountIcon.png"></td>
+    <td><span style="color:white; font-size:30px;">Energy Express Travel Center</span><br><span style="color:white; font-size:15px;">POC . 3036230316</span></td> 
+  </tr>
+  
+  
+</table>
+
+</div>
+<div id="googleMap" style="height:380px;"></div>
+<div style="border:1px; height:100px;">Details
+  <table>
+  <tr>
+  <td>Value:</td>
+  <td></td>
+  <td>Value:</td>
+  <td></td>
+  </tr>
+  <tr>
+  <td>Value:</td>
+  <td></td>
+  <td>Value:</td>
+  <td></td>
+  </tr>
+  </table>
+</div>
+
+
+  <div style="float:left; margin-right:20px;"><h2>Overall Score - 13/15</h2></div>
+  <div style="margin-top:15px;"><img src="../assets/largeGreenDot.png" height="40" width="40"></div>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-primary">
+      <div class="panel-heading" >
+      <table width="100%">
+      <tr>
+      <td width="20%"><a class="btn btn-primary btn-lg" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1">Core - 3/4</a></td>
+      <td width="80%" align="right"><a class="btn btn-warning btn-sm" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</a></td>
+      </tr>
+      </table>
+        
+          
+        
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">
+<table style="width:100%">
+  <tr>
+    <td><img src="../assets/budlightIcon.png"></td>
+    <td>BUD LIGHT 18/16 OZ CAN</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+  <tr>
+    <td><img src="../assets/naturalIceIcon.png"</td>
+    <td>NATURAL ICE 15/25 AL CAN SHRINK</td> 
+    <td><img src="../assets/yellowDot.png"></td>
+  </tr>
+  <tr>
+    <td><img src="../assets/budlightIcon.png"></td>
+    <td>BUDWEISER 20/12 OZ NRLN</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+  <tr>
+    <td><img src="../assets/budIcon.png"</td>
+    <td>BUD LIGHT 20/12 OZ NRLN</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+</table>
+
+       </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading" >
+      <table width="100%">
+      <tr>
+      <td width="20%"><a class="btn btn-primary btn-lg" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Incremental</a></td>
+      <td width="80%" align="right"><a class="btn btn-success btn-sm" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</a></td>
+      </tr>
+      </table>
+        
+          
+        
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+        <table style="width:100%">
+  <tr>
+    <td><img src="../assets/brandIconPlaceholder.png"></td>
+    <td>Placeholder</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+  <tr>
+    <td><img src="../assets/brandIconPlaceholder.png"</td>
+    <td>Placeholder</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+  <tr>
+    <td><img src="../assets/brandIconPlaceholder.png"></td>
+    <td>Placeholder</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+  <tr>
+    <td><img src="../assets/brandIconPlaceholder.png"</td>
+    <td>Placeholder</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+</table>
+  
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading" >
+      <table width="100%">
+      <tr>
+      <td width="20%"><a class="btn btn-primary btn-lg" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3">FMB</a></td>
+      <td width="80%" align="right"><a class="btn btn-warning btn-sm" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</a></td>
+      </tr>
+      </table>
+        
+          
+        
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+
+  <table style="width:100%">
+  <tr>
+    <td><img src="../assets/brandIconPlaceholder.png"></td>
+    <td>Placeholder</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+  <tr>
+    <td><img src="../assets/brandIconPlaceholder.png"</td>
+    <td>Placeholder</td> 
+    <td><img src="../assets/yellowDot.png"></td>
+  </tr>
+  <tr>
+    <td><img src="../assets/brandIconPlaceholder.png"></td>
+    <td>Placeholder</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+  <tr>
+    <td><img src="../assets/brandIconPlaceholder.png"</td>
+    <td>Placeholder</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+</table>
+
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="panel panel-primary">
+      <div class="panel-heading" >
+      <table width="100%">
+      <tr>
+      <td width="20%"><a class="btn btn-primary btn-lg" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4">Placeholder</a></td>
+      <td width="80%" align="right"><a class="btn btn-success btn-sm" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapseExample">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</a></td>
+      </tr>
+      </table>
+        
+          
+        
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+
+  <table style="width:100%">
+  <tr>
+    <td><img src="../assets/brandIconPlaceholder.png"></td>
+    <td>Placeholder</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+  <tr>
+    <td><img src="../assets/brandIconPlaceholder.png"</td>
+    <td>Placeholder</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+  <tr>
+    <td><img src="../assets/brandIconPlaceholder.png"></td>
+    <td>Placeholder</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+  <tr>
+    <td><img src="../assets/brandIconPlaceholder.png"</td>
+    <td>Placeholder</td> 
+    <td><img src="../assets/greenDot.png"></td>
+  </tr>
+</table>
+
+
+      </div>
+    </div>
+  </div> 
+  
+  
+</div>
+    
+</body>
+</html>
